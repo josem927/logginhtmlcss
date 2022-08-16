@@ -1,0 +1,67 @@
+body,html {
+    height: 100%;
+
+
+}
+body{
+ margin: 0;
+ padding: 0; 
+ background: #2F3542;  /*este es el fondo que se le dara a toda la pagina*/
+
+
+
+ display: flex; /*el display flex lo usamos para centrar el contenedor*/
+ flex-direction: row;
+ flex-wrap:wrap ;
+ justify-content: center;
+ align-items: center;
+}
+.form-box{
+    width: 300px; /*ancho*/
+    height: 400px;  /*alto*/
+    padding: 40px;    /*es como un margen que se le dara al rdedor del loggin*/ 
+    background: #191919;  /*aqui seleccionamos el color delfondo que se mostrara al recuadro del login*/
+    text-align: center; /* y el texto centrado*/           
+}
+.form-title{
+    color: ivory; /*le da color al titulo*/
+    text-transform: uppercase; /*con el text-transform: uppercase; lo que hace es transformar el titulo en mayuscula ya que estamos en la classs title */
+    font-weight: 500; /* con este comando le damos de el grosor de tamaño alas letras del titulo depende tu class*/
+    
+}
+.form-box input[type="text"],   /*seleccionamos los tres elementos por su propiedad type tex, pasword etc.*/
+.form-box input[type="password"],
+.form-box button[type="submit"]{
+
+    border: 0; /*aqui le quitamos los bordes por defecto*/
+     background: none; /*le quitamos el color a los texbox a transparente y al boton*/
+     display: block; /*esto hace que los texbox y el boton esten uno bajo otro*/
+     margin: 20px auto; /*esto es para que este separado cada uno y el auto va a estar determinado por el ancho del contenedor*/
+     padding: 14px 10px; /* separado 14 de arriba hacia abajo y 10 hacia los lados*/
+     text-align: center; /*textro centrado es decir texbox boton*/
+     border: 2px solid #3742fa;
+     width: 200px; /*ancho de los texbox*/
+     outline: none;
+     color: #FFFFFF; /*cambiamos el color de las letras que el usuario ingresara*/
+     border-radius: 24px; /*esto nos redondeara los bordes*/
+     transition: 0.25s;
+
+ }
+ .form-box input[type="text"]:focus,
+ .form-box input[type="password"]:focus{
+ width: 280px;
+ border-color:#FFFFFF;
+
+ }
+ .form-box button[type="submit"]{
+border:0px;
+background: #5352ed;
+cursor: pointer;
+
+ }
+
+
+
+
+
+
